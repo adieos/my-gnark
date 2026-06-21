@@ -42,4 +42,24 @@ func (c *MerkleTreeCircuit) Define(api frontend.API) error {
 	return nil
 }
 
-// TO DO: compare with one from gnark/std/accumulator/merkle
+type FirstTACircuit struct {
+	RootHash    frontend.Variable `gnark:",public"`
+	PathIndices []frontend.Variable
+	Siblings    []frontend.Variable
+	Preimage    frontend.Variable
+
+	// additionals
+	Nullifier frontend.Variable `gnark:",public"`
+	Vote1     frontend.Variable
+	Vote2     frontend.Variable
+	Vote3     frontend.Variable
+
+	// resulting votes too!
+}
+
+// TO DO: make the elgamal circuit
+// TO DO 2: compare with one from gnark/std/accumulator/merkle
+// TO DO 3: make the one that resembles closer to your thesis. add the following:
+// 1. adding regionID to hash
+// 2. add ZKRP to ensure vote is valid
+// 3. Nullifier

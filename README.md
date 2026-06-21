@@ -6,12 +6,22 @@
 | `try1.go` | preimage knowledge of a Poseidon hash                 |
 | `try2.go` | multiple preimage knowledge of a single Poseidon hash |
 | `try3.go` | MiMC hash                                             |
+| `try4.go` | simple merkle proof                                   |
+| `try5.go` | zero-knowledge exponential elgamal encryption         |
 
 # Circuit Files
 
 | File          | Circuit for                     |
 | ------------- | ------------------------------- |
 | `circuits.go` | `try1.go`, `try2.go`, `try3.go` |
+| `merkle.go`   | `try4.go`                       |
+| `elgamal.go`  | `try5.go`                       |
+
+# Miscellaneous
+
+| File               | Usage                 |
+| ------------------ | --------------------- |
+| `ai/build_tree.go` | construct merkle tree |
 
 # Footnotes
 
