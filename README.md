@@ -8,6 +8,7 @@
 | `try3.go` | MiMC hash                                             |
 | `try4.go` | simple merkle proof                                   |
 | `try5.go` | zero-knowledge exponential elgamal encryption         |
+| `try6.go` | vote validity (simple)                                |
 
 # Circuit Files
 
